@@ -52,4 +52,4 @@ For more information, please see the published papers or contact the author.
 The code is free for academic/research purpose. Use it at your own risk and we are not responsible for any loss resulting from this code. Feel free to submit pull request for bug fixes.
 
 ## Author
-[Ilya Zlotnik](https://scholar.google.ru/citations?hl=ru&user=gWphyBwAAAAJ)
+[Ilya Zlotnik](https://scholar.google.ru/citations?hl=ru&user=gWphyBwAAAAJ), 2007 - 2014

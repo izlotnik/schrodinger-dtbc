@@ -1,0 +1,33 @@
+function OutParams = initGraphics(sDimension, Params)
+OutParams = Params;
+switch sDimension
+    case '2D'
+        OutParams.hFigure = figure('units', 'Normalized', 'position', [0 0 1 1]);
+        set(gca, 'FontSize'  , Params.nFontSize...
+            , 'FontWeight', Params.sFontWeight...
+            , 'NextPlot'  , Params.sNextPlot);
+        xlim(gca, Params.nLimitX);
+    case '3D'
+        switch Params.sStyle
+            case {'master-2010','vestnik-mpei-2010'}
+                OutParams.hFigure = figure('Name', Params.sName ...
+                    , 'Units'   , Params.sUnits ...
+                    , 'Position', Params.nPosition);
+            otherwise
+                OutParams.hFigure = figure('Name', Params.sName ...
+                    , 'Units'   , Params.sUnits ...
+                    , 'Position', Params.nPosition); % [0 0 0.8*768/1364 1]); %
+                set(gca, 'CameraPosition' , Params.nCameraPosition...
+                    , 'FontSize'       , Params.nFontSize...
+                    , 'FontWeight'     , Params.sFontWeight...
+                    , 'NextPlot'       , Params.sNextPlot...
+                    );
+        end
+end
+
+%% Output value
+OutParams.hAxes = gca;
+
+%% Predefault movie's settings
+OutParams.pMovie.nFrameCount = 0;
+OutParams.pMovie.pFrame = struct('cdata', [], 'colormap', []);

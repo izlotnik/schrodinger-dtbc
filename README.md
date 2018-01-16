@@ -1,3 +1,6 @@
+![Matlab](https://img.shields.io/badge/matlab-%3E%3Dr2009b-orange.svg)
+![License](https://img.shields.io/badge/license-MIT%20License-orange.svg)
+
 # Description
 The provided Matlab codes allow to solve numerically the generalized time-dependent Schrödinger equation in unbounded domains. In case of variable coefficients becomes constant for large space variables, we can construct so-called _discrete transparent boundary conditions_ (DTBC) and use them to restrict used numercal schemes to a finite mesh. Both theoretical analysis of stability and the accomplished computations confirm that considered numerical methods coupled to the discrete TBC are effective even in the case of highly oscillating solutions and discontinuous potentials.
 
@@ -52,4 +55,4 @@ For more information, please see the published papers or contact the author.
 The code is free for academic/research purpose. Use it at your own risk and we are not responsible for any loss resulting from this code. Feel free to submit pull request for bug fixes.
 
 ## Author
-[Ilya Zlotnik](https://scholar.google.ru/citations?hl=ru&user=gWphyBwAAAAJ), 2007 - 2014
+[Ilya Zlotnik](https://scholar.google.ru/citations?hl=ru&user=gWphyBwAAAAJ) 2007 - 2014
